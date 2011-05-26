@@ -55,11 +55,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "django"
     chef.add_recipe "git"
     chef.add_recipe "mysql"
-    chef.add_recipe "java"
-    chef.add_recipe "java_sun"
-    chef.add_recipe "iptables"
-    chef.add_recipe "jenkins"
-  end
+    end
   
     
   # Enable provisioning with chef server, specifying the chef server URL,
