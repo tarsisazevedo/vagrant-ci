@@ -55,6 +55,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "django"
     chef.add_recipe "git"
     chef.add_recipe "mysql"
+    chef.add_recipe "vim"
     end
   
     
