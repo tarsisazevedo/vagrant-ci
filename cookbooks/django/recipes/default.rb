@@ -20,6 +20,9 @@ include_recipe "apache2"
 include_recipe "apache2::#{node[:django][:web_server]}"
 include_recipe "python"
 
-package "python-django" do
-  action :install
+bash "install_django" do
+    user "vagrant"
+    code <<-EOH
+    sudo pip install django
+    EOH
 end
